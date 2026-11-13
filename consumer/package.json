@@ -1,0 +1,28 @@
+{
+  "name": "customer-client",
+  "version": "1.0.0",
+  "description": "Consumer of the Customer API, with Pact consumer-driven contract tests",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "pact:publish": "pact-broker publish ../pacts --auto-detect-version-properties"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "roots": [
+      "<rootDir>/test"
+    ],
+    "testTimeout": 30000
+  },
+  "devDependencies": {
+    "@pact-foundation/pact": "^17.1.4",
+    "@pact-foundation/pact-cli": "^18.10.9",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.20.5",
+    "jest": "^30.5.2",
+    "ts-jest": "^29.4.15",
+    "typescript": "~5.9"
+  }
+}

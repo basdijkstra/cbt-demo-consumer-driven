@@ -1,0 +1,9 @@
+node_modules/
+dist/
+logs/
+bin/
+obj/
+.vs/
+*.user
+
+pacts/
