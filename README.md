@@ -20,6 +20,8 @@ pacts/      Contract written by the consumer tests, published from here to PactF
 
 Run it with `dotnet run --project provider/CustomerApi`; customer `12345` is seeded in memory.
 
+The API is described by an OpenAPI 3.0.1 spec in `provider/oas/openapi.yaml`.
+
 ## The contract
 
 The consumer tests (`consumer/test/customerClient.pact.test.ts`) define three interactions:
